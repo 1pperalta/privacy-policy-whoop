@@ -26,15 +26,16 @@ The export will be generated in `out/`.
 
 ## GitHub Pages deployment
 
-If your site is deployed as a project page, set the base path before building:
+The repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`.
 
-```bash
-NEXT_PUBLIC_BASE_PATH=/your-repo-name npm run build
-```
+To deploy:
 
-If the repository is served as a user or organization site, you can omit the base path.
+1. In your GitHub repository, open `Settings` → `Pages`.
+2. Set the source to `GitHub Actions`.
+3. Push your code to `main`.
+4. Wait for the workflow to finish.
 
-Then publish the contents of `out/` to GitHub Pages.
+GitHub will publish the static export from `out/` automatically.
 
 ## What to edit
 
